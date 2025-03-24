@@ -62,15 +62,26 @@
           font-weight: bold;
           font-size: 20px;
         }
-        
-    
+        @media (max-width: 768px) {
+          .header{
+            display: grid;
+            grid-template-columns:4fr 4fr 4fr ;
+            margin-top: 5px;
+            justify-content: space-around;
 
+        }
+      }
+      @media (max-width: 576px) {
+            #header {
+                font-size: 20px;
+            }
+        }
         
     </style>
 </head>
 <body class="container-fluid">
     <header>
-        <div class="header">
+        <div class="header" id="header">
 
             <div>
                 <img src="images/Screenshot 2025-03-24 at 2.50.20 PM.png" height="50px" width="50px" >
